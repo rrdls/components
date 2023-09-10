@@ -290,7 +290,6 @@ export class IfcPropertiesManager
       ? new WEBIFC[schema].IfcText(description)
       : null;
     const pset = new WEBIFC[schema].IfcPropertySet(
-      model.ifcMetadata.maxExpressID,
       psetGlobalId,
       ownerHistoryHandle,
       psetName,
@@ -302,7 +301,6 @@ export class IfcPropertiesManager
     this.increaseMaxID(model);
     const relGlobalId = this.newGUID(model);
     const rel = new WEBIFC[schema].IfcRelDefinesByProperties(
-      model.ifcMetadata.maxExpressID,
       relGlobalId,
       ownerHistoryHandle,
       null,
@@ -348,7 +346,6 @@ export class IfcPropertiesManager
     // @ts-ignore
     const propValue = new WEBIFC[schema][type](value);
     const prop = new WEBIFC[schema].IfcPropertySingleValue(
-      model.ifcMetadata.maxExpressID,
       propName,
       null,
       propValue,
