@@ -2,6 +2,7 @@
   "name": "openbim-components",
   "version": "1.0.0-alpha.103",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "harry collin, antonio gonzalez viegas",
   "license": "MIT",
   "packageManager": "yarn@3.2.1",
